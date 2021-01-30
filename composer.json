@@ -1,0 +1,31 @@
+{
+    "name": "pierreminiggio/french-question-definer",
+    "description": "Check if it's a french question",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pierre MINIGGIO",
+            "email": "pierre@miniggiodev.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "PierreMiniggio\\FrenchQuestionDefiner\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PierreMiniggio\\FrenchQuestionDefinerTest\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.4.11"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "bash vendor/bin/phpunit tests/"
+    }
+}
