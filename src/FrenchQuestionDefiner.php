@@ -74,7 +74,7 @@ class FrenchQuestionDefiner
 
     private function isAVerb(string $word): bool
     {
-        $curl = curl_init('https://api.touslesverbes.com/verbs/exact-search/' . $word);
+        $curl = curl_init('https://api.touslesverbes.ggio.fr/verbs/exact-search/' . $word);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         $res = ! empty(curl_exec($curl));
         curl_close($curl);
